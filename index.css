@@ -3,8 +3,9 @@ img.flytype{
     height: 30px;
 }
 img.company{
-    width: 20px;
-    height: 20px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
 }
 table{
     border: 1px solid lightgray;
@@ -21,6 +22,13 @@ tr:nth-child(2n){
 tr:nth-child(2n+1){
     background: lightcyan;
 }
+tr:hover{
+    background: lightpink;
+}
 fieldset{
     background:snow;
+}
+
+tr:hover~tr:nth-child(n) td:nth-child(3n){
+    background: lawngreen;
 }
