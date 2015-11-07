@@ -1,205 +1,100 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Лет ми спик фром май харт</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Поле для фильтрации по городу -->
-        <fieldset><input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
-        </fieldset>
-        <!-- Здесь применять вашу самую сильную магию -->
-        <div>
-    <table>
-        <tr >
-            <td>Тип Рейса</td>
-            <td>Номер рейса</td>
-            <td>Авиакомпания</td>
-            <td>Логотип авиакомпании</td>
-            <td>Тип воздушного судна</td>
-            <td>Аэропорт назначения</td>
-            <td>Плановоне время</td>
-            <td>Номер терминала</td>
-            <td>Статус рейса</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>AZ-3784</td>
-            <td>Alitalia</td>
-            <td><img class="company" src="aita.gif"></td>
-            <td>B-737-800W</td>
-            <td>МОСКВА/ШРМ</td>
-            <td>21 Окт 16:15</td>
-            <td>9</td>
-            <td>Прибыл</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="d.png" ></td>
-            <td>Ae-123</td>
-            <td>Aeroflot</td>
-            <td><img class="company" src="aero.gif"></td>
-            <td>B-737-800W</td>
-            <td>ATL/KATL</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Регистрация</td>
-        </tr>
-        <tr >
-            <td><img class="flytype" src="d.png" ></td>
-            <td>Af-12322</td>
-            <td>AirFrance</td>
-            <td><img class="company" src="france.gif"></td>
-            <td>B-737-800W</td>
-            <td>PEK/ZBAA</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Посадка</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>AZ-222</td>
-            <td>Alitalia</td>
-            <td><img class="company" src="aita.gif"></td>
-            <td>B-737-800W</td>
-            <td>CDG/LFPG</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Летит</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>AZ-242</td>
-            <td>Alitalia</td>
-            <td><img class="company" src="aita.gif"></td>
-            <td>B-737-800W</td>
-            <td>LAX/KLAX</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Приземлился</td>
-        </tr><tr >
-        <td><img class="flytype" src="d.png" ></td>
-        <td>Af-2225</td>
-        <td>AirFrance</td>
-        <td><img class="company" src="france.gif"></td>
-        <td>B-737-800W</td>
-        <td>DFW/KDFW</td>
-        <td>33 октября 13:11</td>
-        <td>666</td>
-        <td>Задерживается до 13:99</td>
-    </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>Ae-222</td>
-            <td>Aeroflot</td>
-            <td><img class="company" src="aero.gif"></td>
-            <td>B-737-800W</td>
-            <td>DEN/KDEN</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>По расписанию</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="d.png" ></td>
-            <td>Af-4222</td>
-            <td>AirFrance</td>
-            <td><img class="company" src="france.gif"></td>
-            <td>B-737-800W</td>
-            <td>IAH/KIAH</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Посадка</td>
-        </tr><tr >
-        <td><img class="flytype" src="a.png" ></td>
-        <td>AZ-22277</td>
-        <td>Alitalia</td>
-        <td><img class="company" src="aita.gif"></td>
-        <td>B-737-800W</td>
-        <td>CAN/ZGGG</td>
-        <td>33 котобря 15:66</td>
-        <td>10</td>
-        <td>Летит</td>
-    </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>AZ-24422</td>
-            <td>Alitalia</td>
-            <td><img class="company" src="aita.gif"></td>
-            <td>B-737-800W</td>
-            <td>MCO/KMCO</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Отменен</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>Ae-24522</td>
-            <td>Aeroflot</td>
-            <td><img class="company" src="aero.gif"></td>
-            <td>B-737-800W</td>
-            <td>SYD/YSSY</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Летит</td>
-        </tr><tr >
-        <td><img class="flytype" src="a.png" ></td>
-        <td>AZ-22256</td>
-        <td>Alitalia</td>
-        <td><img class="company" src="aita.gif"></td>
-        <td>B-737-800W</td>
-        <td>MUC/EDDM</td>
-        <td>33 котобря 15:66</td>
-        <td>10</td>
-        <td>Приземлился</td>
-    </tr>
-        <tr>
-            <td><img class="flytype" src="d.png" ></td>
-            <td>Af-6722</td>
-            <td>AirFrance</td>
-            <td><img class="company" src="france.gif"></td>
-            <td>B-737-800W</td>
-            <td>АEWR/KEWR</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Ожидание посадки</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="a.png" ></td>
-            <td>Ae-256322</td>
-            <td>Aeroflot</td>
-            <td><img class="company" src="aero.gif"></td>
-            <td>B-737-800W</td>
-            <td>HKG/VHHH</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>По расписанию</td>
-        </tr>
-        <tr>
-            <td><img class="flytype" src="d.png" ></td>
-            <td>AZ-2227531</td>
-            <td>Alitalia</td>
-            <td><img class="company" src="aita.gif"></td>
-            <td>B-737-800W</td>
-            <td>АBKK/VTBS</td>
-            <td>33 котобря 15:66</td>
-            <td>10</td>
-            <td>Отменен</td>
-        </tr>
-    </table>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic"
+    rel='stylesheet'
+    type='text/css'>
+<head>
+    <meta charset="utf-8">
+    <title>Мяндекс.Муррркет</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<input  type="checkbox">На столбик</input>
+<div class="to-be-changed" >
+    <!-- Здесь прикладывать основное усилие -->
+    <h4 class="title">Мяндекс.Муррркет</h4>
+    <div class="block">
+        <a href="#" class="cat1 change"></a>
+        <p class="name">Грустняша- кот</p>
+        <p class="category">Грусть</p>
+        <div class="rating" title="3,6">
+            <div style="width: 100%;"></div>
         </div>
-    <fieldset>
-        Your Email:
-        <input type="email" placeholder="example@yandex-team.ru" required/>
-        Your Phone:
-        <input name="tel"  type="tel" required
-               pattern="[\+]\d{1} [\(]\d{3}[\)] \d{3}[\-]\d{1}[\-]\d{3}"
-               title="Type the right type of phone like in example"
-               placeholder="+7 (999) 114-4-457" />
-                    <button  type="submit" formmethod="post">Отправить</button>
-            </fieldset>
-    </body>
+        <p class="price">$10</p>
+        <p class="about">Этот кот поможет вам погрустить</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat2 change"></a>
+        <p class="name">Любоффка-кот</p>
+        <p class="category">Любовь</p>
+        <p class="mark">mark</p>
+        <p class="price">$100</p>
+        <p class="about">Кот переполнен любовью(ко всему:3)</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat3 change"></a>
+        <p class="name">Кино-кот</p>
+        <p class="category">Кино</p>
+        <p class="mark">mark</p>
+        <p class="price">$1000</p>
+        <p class="about">Хорош при просмотре фильмов</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat4 change"></a>
+        <p class="name">WTF!</p>
+        <p class="category">Смущение</p>
+        <p class="mark">mark</p>
+        <p class="price">$50</p>
+        <p class="about">Хмм....</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat5 change"></a>
+        <p class="name">Джеймс Кот</p>
+        <p class="category">Бонд</p>
+        <p class="mark">mark</p>
+        <p class="price">$007</p>
+        <p class="about">Взболтать, но не смешивать.</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat6 change"></a>
+        <p class="name">Дивокот</p>
+        <p class="category">Удивление</p>
+        <p class="mark">mark</p>
+        <p class="price">$666</p>
+        <p class="about">Удивительная котейка</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat7 change"></a>
+        <p class="name">Улыбака-кот</p>
+        <p class="category">Радость</p>
+        <p class="mark">mark</p>
+        <p class="price">$5</p>
+        <p class="about">Приносит радость</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat8 change"></a>
+        <p class="name">Прятки-кот</p>
+        <p class="category">Игра</p>
+        <p class="mark">mark</p>
+        <p class="price">$88</p>
+        <p class="about">Любит прятать и прятаться</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat9 change"></a>
+        <p class="name">Фи-кот</p>
+        <p class="category">Презрение</p>
+        <p class="mark">mark</p>
+        <p class="price">$9</p>
+        <p class="about">Кот может делать Фи</p>
+    </div>
+    <div class="block">
+        <a href="#" class="cat10 change"></a>
+        <p class="name">Голод-кот</p>
+        <p class="category">Еда</p>
+        <p class="mark">mark</p>
+        <p class="price">$65</p>
+        <p class="about">Любит покушать</p>
+    </div>
+</div>
+</body>
 </html>
